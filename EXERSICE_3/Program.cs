@@ -43,6 +43,25 @@ namespace EXERSICE_3
             else
                 return false ;
         }
+
+        public void traverse() //travers all the nodes of the list
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\n Records in the list are:\n");
+                Node currentNode;
+                currentNode = LAST.next;
+                while (currentNode != LAST)
+                {
+                    Console.Write(currentNode.rollNumber+""+ currentNode.name+"\n");
+                    currentNode = currentNode.next;
+                }
+                Console.Write(LAST.rollNumber + "" + LAST.name + "\n");
+            }
+        }
+
     }
 
     class Program
