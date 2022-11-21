@@ -90,7 +90,29 @@ namespace EXERSICE_3
                             obj.traverse();
                         }
                         break;
-                    
+                    case '2':
+                        {
+                            if (obj.listEmpty() == true)
+                            {
+                                Console.WriteLine("\n List is empty");
+                                break;
+                            }
+                            Node prev, curr;
+                            prev = curr = null;
+                            Console.Write("n Enter the roll number of the student whose record is to be searched:");
+                            int num = Convert.ToInt32(Console.ReadLine());
+                            if(obj.Search(num,ref prev,ref curr)==false)
+                                Console.WriteLine("\n Record not found");
+                            else
+                            {
+                                Console.WriteLine("\n Record found");
+                                Console.WriteLine("\n Roll number:" + curr.rollNumber);
+                                Console.WriteLine("\n Name:" + curr.name);
+                            }
+
+                        }
+                        break ;
+
                 }
             }
         }
