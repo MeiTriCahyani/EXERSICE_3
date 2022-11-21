@@ -118,9 +118,16 @@ namespace EXERSICE_3
 
                         }
                         break;
-
+                    case '4':
+                        return;
+                    default:
+                        {
+                            Console.WriteLine("Invalid option");
+                            break ;
+                        }
                 }
             }
+
         }
     }
 
