@@ -69,11 +69,22 @@ namespace EXERSICE_3
                 Console.WriteLine("\n The forst record in the list is:\n\n" + LAST.next.rollNumber + "" + LAST.next.name);
         }
     }
-
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        CircularList obj = new CircularList();
+        while(true)
         {
+            try
+            {
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.Write("");
+            }
         }
     }
+
+
 }
