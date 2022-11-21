@@ -85,7 +85,12 @@ namespace EXERSICE_3
                 char ch = Convert.ToChar(Console.ReadLine());
                 switch (ch)
                 {
-
+                    case '1':
+                        {
+                            obj.traverse();
+                        }
+                        break;
+                    
                 }
             }
         }
